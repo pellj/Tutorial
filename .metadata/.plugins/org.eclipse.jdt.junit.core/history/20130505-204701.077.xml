@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="SampleUnitTest" project="TutorialTest" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="cse403 [emulator-5554]" time="2.746">
+    <testsuite name="com.example.myfirstapp.test.SampleUnitTest" time="2.746">
+      <testcase name="testMessageTextBoxExists " classname="com.example.myfirstapp.test.SampleUnitTest" time="2.746"/>
+    </testsuite>
+  </testsuite>
+</testrun>

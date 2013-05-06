@@ -1,0 +1,18 @@
+package com.example.myfirstapp.test;
+
+import android.test.AndroidTestCase;
+
+public class UselessTest extends AndroidTestCase {
+
+	public void uselessTestCase1() {
+		assertEquals(2, 1 + 1);
+	}
+	
+	public void uselessTestCase2() {
+		assertFalse(2 + 2 == 6);
+	}
+	
+	public void uselessTestCase3_fail() {
+		assertTrue(false);
+	}
+}

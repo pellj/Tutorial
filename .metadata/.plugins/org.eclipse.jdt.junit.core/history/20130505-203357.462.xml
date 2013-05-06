@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="UselessTest" project="TutorialTest" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="cse403 [emulator-5554]" time="0.32">
+    <testsuite name="com.example.myfirstapp.test.UselessTest" time="0.32">
+      <testcase name="testAndroidTestCaseSetupProperly " classname="com.example.myfirstapp.test.UselessTest" time="0.32"/>
+    </testsuite>
+  </testsuite>
+</testrun>

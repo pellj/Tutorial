@@ -1,0 +1,10 @@
+package com.example.myfirstapp.test;
+
+import android.test.AndroidTestCase;
+
+public class MainActivityTest extends AndroidTestCase {
+
+	public void uselessTest1() {
+		
+	}
+}

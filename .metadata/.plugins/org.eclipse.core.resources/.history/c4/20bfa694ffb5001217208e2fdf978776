@@ -1,0 +1,19 @@
+package com.example.myfirstapp.test;
+
+import org.junit.Test;
+
+import com.example.myfirstapp.MainActivity;
+
+import android.test.ActivityInstrumentationTestCase2;
+
+public class SampleUnitTest extends ActivityInstrumentationTestCase2<MainActivity> {
+
+	public SampleUnitTest() {
+		super("com.example.myfirstapp", MainActivity.class);
+	}
+	
+	@Test
+	public void testMessageTextBoxExists() {
+		assertNotNull(getActivity().findViewById(com.example.myfirstapp.R.id.edit_message));
+	}
+}
