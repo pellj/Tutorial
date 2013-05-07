@@ -1,5 +1,3 @@
 INDEX VERSION 1.126+C:\Users\Sparky\Documents\CSE\Android\Sample\Tutorial\.metadata\.plugins\org.eclipse.jdt.core
 1907681027.index
-2696876199.index
-1712122651.index
 676389914.index
