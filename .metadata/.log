@@ -376,3 +376,6 @@ Contains: C:\Users\Sparky\Documents\CSE\Android\Sample\Tutorial\test overlaps th
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-05-07 14:48:35.387
 !MESSAGE Failed to load properties file for project 'test'
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2013-05-07 15:24:42.147
+!MESSAGE No valid Android XML Editor Delegate found for file /test/build.xml [Res null, type null]

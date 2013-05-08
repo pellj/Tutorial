@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MainActivity" default="help">
+<project name="TutorialTest" default="help">
+    
+    <taskdef resource="checkstyletask.properties" classpath="${basedir}/libs/checkstyle-5.6-all.jar"/>
 
     <!-- The local.properties file is created and updated by the 'android' tool.
          It contains the path to the SDK. It should *NOT* be checked into
@@ -86,25 +88,7 @@
          In all cases you must update the value of version-tag below to read 'custom' instead of an integer,
          in order to avoid having your file be overridden by tools such as "android update project"
     -->
-    <!-- version-tag: custom -->
+    <!-- version-tag: 1 -->
     <import file="${sdk.dir}/tools/ant/build.xml" />
-    
-    <taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask"/>
-    
-    <target name="findbugs">
-    	<mkdir dir="reports" />
-    	<findbugs home="${findbugs.home}" output="xml" outputFile="reports/findbugs.xml" excludeFilter="findbugs-exclude.xml">
-    	    <auxClasspath path="${android.jar}" />
-    	    <class location="${out.dir}" />
-    	</findbugs>
-    </target>
-    
-    <taskdef resource="checkstyletask.properties" classpath="${basedir}/libs/checkstyle-5.6-all.jar"/>
-        
-        <checkstyle config="sun_checks.xml" failonviolation="false">
-            <fileset dir="src" includes="**/*.java"/>
-            <formatter type="plain"/>
-            <formatter type="xml" toFile="checkstyle-results.xml"/>
-    </checkstyle>
 
 </project>
