@@ -95,6 +95,8 @@
     	<mkdir dir="reports" />
     	<findbugs home="${findbugs.home}" output="xml" outputFile="reports/findbugs.xml" excludeFilter="findbugs-exclude.xml">
     	    <auxClasspath path="${android.jar}" />
+    	    <auxClasspath path="${rt.jar}" />
+    	    <auxClasspath path="libs\android-support-v4.jar" />
     	    <class location="${out.dir}" />
     	</findbugs>
     </target>
