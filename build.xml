@@ -100,12 +100,14 @@
     	</findbugs>
     </target>
     
-    <taskdef resource="checkstyletask.properties" classpath="${basedir}/libs/checkstyle-5.6-all.jar"/>
-        
-        <checkstyle config="sun_checks.xml" failonviolation="false">
-            <fileset dir="src" includes="**/*.java"/>
-            <formatter type="plain"/>
-            <formatter type="xml" toFile="checkstyle-result.xml"/>
-    </checkstyle>
+    <taskdef resource="checkstyletask.properties" classpath="${basedir}/libs/checkstyle.jar"/>
+   
+    <target name="checkstyle">   
+        <checkstyle config="my_project_styles.xml">
+	    <fileset dir="src" includes="**/*.java"/>
+	    <formatter type="plain"/>
+	    <formatter type="xml" toFile="checkstyle-result.xml"/>
+	</checkstyle>
+    </target>
 
 </project>
