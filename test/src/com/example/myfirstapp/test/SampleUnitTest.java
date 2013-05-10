@@ -24,10 +24,9 @@ public class SampleUnitTest extends ActivityInstrumentationTestCase2<MainActivit
 		assertTrue(editText.getHint().equals("Enter a message"));
 	}
 
-	/*
 	@SmallTest
 	public void testThatWillFail() {
 		assertTrue(false);
 	}
-	*/
+
 }
