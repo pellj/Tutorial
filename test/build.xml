@@ -89,5 +89,25 @@
     <!-- version-tag: custom -->
     
     <import file="${sdk.dir}/tools/ant/build.xml" />
+    
+    <target name="unit-tests" depends="clean, emma, debug, install" >
+    
+        <property name="log.file" value="unit_tests_standard_out.txt" />
+
+        <record name="${log.file}" action="start" />
+        <antcall target="test" />
+        <record name="${log.file}" action="stop" />
+    
+        <loadfile property="tests.output" srcFile="${log.file}" />
+    
+        <echo>Checking for failures</echo>
+        <fail message="unit tests failed!" >
+            <condition>
+                <contains string="${tests.output}" substring="FAILURES" />
+            </condition>
+        </fail>
+    
+        <echo>unit tests passed!</echo>
+    </target>
 
 </project>

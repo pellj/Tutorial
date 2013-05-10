@@ -11,16 +11,23 @@ public class SampleUnitTest extends ActivityInstrumentationTestCase2<MainActivit
 	public SampleUnitTest() {
 		super("com.example.myfirstapp", MainActivity.class);
 	}
-	
+
 	@SmallTest
 	public void testMessageTextBoxExists() {
 		assertNotNull(getActivity().findViewById(com.example.myfirstapp.R.id.edit_message));
 	}
-	
+
 	@SmallTest
 	public void testMessageTextBoxDisplaysCorrectHint() {
 		assertNotNull(getActivity().findViewById(com.example.myfirstapp.R.id.edit_message));
 		EditText editText = (EditText) getActivity().findViewById(com.example.myfirstapp.R.id.edit_message);
-		editText.getHint().equals("Enter a message");
+		assertTrue(editText.getHint().equals("Enter a message"));
 	}
+
+	/*
+	@SmallTest
+	public void testThatWillFail() {
+		assertTrue(false);
+	}
+	*/
 }
